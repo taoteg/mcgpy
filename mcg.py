@@ -84,6 +84,7 @@ def deleteManifest():
         print '- Manifest file deleted.'
     else:
         print '- No manifest file found.'
+    print ' '
 
 
 ####################################################################
@@ -100,7 +101,7 @@ def generateScenarios():
 
     for recharge_interpretation in os.listdir(recharge_path):
         for well_scenario in os.listdir(well_path):
-            print 'Generating new case scenario from:'
+            print 'Generating new case from:'
             print '- recharge_interpretation: ', recharge_interpretation
             print '- well_scenario: ', well_scenario
             print ' '
