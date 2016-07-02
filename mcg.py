@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 """
 MODFLOW 96 Case Generation (Python)
 MCG.PY
@@ -25,7 +26,7 @@ See README for usage instructions.
 
 # import sys, inspect
 import os
-# import argparse
+import argparse
 import shutil
 
 ####################################################################
@@ -41,119 +42,111 @@ import shutil
 # Arguments Parser
 ####################################################################
 
-# # EXAMPLES from MSG.PY
-# # START EXAMPLE
-# # ARGUMENTS CONFIG
-# __author__ = 'jgentle'
-# parser = argparse.ArgumentParser(description='This is the mcg.py MODFLOW 96 case generation script.')
+# ARGUMENTS CONFIG
+__author__ = 'jgentle'
+parser = argparse.ArgumentParser(description='This is the mcg.py MODFLOW 96 case generation script.')
 
-# # note: set required to false in order to use set_defaults on an option.
-# parser.add_argument('-id','--inputdir', help='Input directory path for wells and tablelinks data. Defaults to /csv_input/ if no argument is provided.',required=False)
-# parser.add_argument('-dd','--datadir', help='Input directory path for scalars data. Defaults to /csv_data/ if no argument is provided.',required=False)
-# parser.add_argument('-od','--outputdir',help='Output directory path. Defaults to /csv_output/ if no argument is provided.', required=False)
-# parser.add_argument('-w','--wells', help='Input file for wells data. Defaults to wells.csv if no argument is provided.',required=False)
-# parser.add_argument('-t','--tablelinks', help='Input file for tablelinks data. Defaults to tablelinks.csv if no argument is provided.',required=False)
-# parser.add_argument('-s','--scalars', help='Input file for scalars data. Defaults to scalars.csv if no argument is provided.',required=False)
-# # parser.add_argument('-wh','--wellsheaders', help='Headers for wells input data. Defaults to [\'A\', \'B\', \'C\', \'D\'] if no argument is provided.',required=False)
-# parser.add_argument('-th','--tablelinksheaders', help='Headers for tablelinks input data. Defaults to [\'Row\', \'Col\', \'Kzone\'] if no argument is provided.',required=False)
-# parser.add_argument('-sh','--scalarsheaders', help='Headers for scalars input data. Defaults to [\'sourceFile\', \'CZ1\', \'CZ2\', \'CZ3\', \'CZ4\', \'CZ5\', \'CZ6\', \'CZ7\', \'CZ8\', \'CZ9\', \'CZ10\', \'CZ11\'] if no argument is provided.',required=False)
+# note: set required to false in order to use set_defaults on an option.
+parser.add_argument('-msd', '--modelsourcedir', help='Input directory path for the model source data. Defaults to model_src if no argument is provided.', required=False)
+parser.add_argument('-rd', '--rechargedir', help='Input directory path for the recharge interpretation source files. Defaults to recharge_interpretations if no argument is provided.', required=False)
+parser.add_argument('-wd', '--welldir', help='Input directory path for the well scalar source files. Defaults to well_scalars if no argument is provided.', required=False)
+parser.add_argument('-mf', '--manifestfile', help='Filename for the manifest to track generated cases. Defaults to scenario_manifest.dat if no argument is provided.', required=False)
+parser.add_argument('-od', '--outputdir', help='Output directory for the generated cases. Defaults to generated_cases if no argument is provided.', required=False)
+parser.add_argument('-cp', '--caseprefix', help='Naming prefix for the generated case directories. Defaults to case if no argument is provided.', required=False)
 
-# # Set some defaults for simplicity.
-# parser.set_defaults(inputdir="/csv_input/")
-# parser.set_defaults(datadir="/csv_data/")
-# parser.set_defaults(outputdir="/csv_output/")
-# parser.set_defaults(wells="wells.csv")
-# parser.set_defaults(tablelinks="tablelinks.csv")
-# parser.set_defaults(scalars="scalars.csv")
-# # parser.set_defaults(wellsheaders="['A', 'B', 'C', 'D']")
-# parser.set_defaults(tablelinksheaders="['Row', 'Col', 'Kzone']")
-# parser.set_defaults(scalarsheaders="['sourceFile', 'CZ1', 'CZ2', 'CZ3', 'CZ4', 'CZ5', 'CZ6', 'CZ7', 'CZ8', 'CZ9', 'CZ10', 'CZ11']")
 
-# # Parse the cli args (which will supercede the defaults).
-# args = parser.parse_args()
+# Set some defaults for simplicity.
+parser.set_defaults(modelsourcedir="model_src") # ./
+parser.set_defaults(rechargedir="recharge_interpretations")  # ./
+parser.set_defaults(welldir="well_scalars")# ./
+parser.set_defaults(manifestfile="scenario_manifest.dat")
+parser.set_defaults(outputdir="generated_cases")# ./
+parser.set_defaults(caseprefix="case")
 
-# # SCRIPT PATHS
-# csv_input_subdirectory = args.inputdir
-# csv_data_subdirectory = args.datadir
-# csv_output_subdirectory = args.outputdir
-
-# # SOURCE DATA INPUTS
-# csv_input_file_wells = args.wells
-# csv_input_file_tablelinks = args.tablelinks
-# csv_input_file_scalars = args.scalars
-# # wells_headers = args.wellsheaders
-# tablelink_headers = args.tablelinksheaders
-# scalars_headers = args.scalarsheaders
-
-# # LOG ARGUMENTS & OPTIONS
-# def LogArguments():
-#     print ("msg.py script arguments:")
-#     print ("-------------------------------")
-#     # print ("First argument: %s" % str(sys.argv[1]))
-#     # print ("Second argument: %s" % str(sys.argv[2]))
-#     # print ("Third argument: %s" % str(sys.argv[3]))
-#     # for i in xrange(total):
-#     #     print ("Argument # %d : %s" % (i, str(sys.argv[i])))
-#     print ("The total numbers of args passed to the script: %d" % total)
-#     print ("Args list: %s" % cmdargs)
-#     print ("Script name: %s" % str(sys.argv[0]))
-#     print ("Wells file: %s" % str(sys.argv[1]))
-#     print ("Tablelinks file: %s" % str(sys.argv[2]))
-#     print ("Scalars filee: %s" % str(sys.argv[3]))
-#     print (" ")
-#     return
-
-# def LogArgsParser():
-#     print ("msg.py script arguments:")
-#     print ("-------------------------------")
-#     print ("Input directory: %s" % args.inputdir )
-#     print ("Data directory: %s" % args.datadir )
-#     print ("Output directory: %s" % args.outputdir )
-#     print ("Input wells file: %s" % args.wells )
-#     print ("Input tablelinks file: %s" % args.tablelinks )
-#     print ("Input scalars file: %s" % args.scalars )
-#     # print ("Wells file headers: %s" % args.wellsheaders )
-#     print ("Tablelinks file headers: %s" % args.tablelinksheaders )
-#     print ("Scalars file headers: %s" % args.scalarsheaders )
-#     print (" ")
-#     return
-
-# #END EXAMPLE
+# Parse the cli args (which will supercede the defaults).
+args = parser.parse_args()
 
 ####################################################################
 # Variables.
 ####################################################################
+
 # current_dir = os.path.abspath('')
 current_dir = os.getcwd()
-model_src_dir = './bsgam_base_model'
+
+# model_src_dir = './base_model_src'
+model_src_dir = args.modelsourcedir
 model_src_path = os.path.abspath(model_src_dir)
-recharge_dir = './recharge_interpretations'
+
+# recharge_dir = './recharge_interpretations'
+recharge_dir = args.rechargedir
 recharge_path = os.path.abspath(recharge_dir)
-well_dir = './well_scalars'
+
+# well_dir = './well_scalars'
+well_dir = args.welldir
 well_path = os.path.abspath(well_dir)
-manifest_file = 'scenario_manifest.dat'
+
+# manifest_file = 'scenario_manifest.dat'
+manifest_file = args.manifestfile
 manifest_file_target = current_dir + '/' + manifest_file
-generated_cases_dir = 'generated_cases'
+
+# generated_cases_dir = 'generated_cases'
+generated_cases_dir = args.outputdir
 generated_cases_path = os.path.abspath(generated_cases_dir)
 
-print '--------------------------------------'
-print 'current_dir: ', current_dir
-print 'model_src_dir: ', model_src_dir
-print 'model_src_path: ', model_src_path
-print 'recharge_dir: ', recharge_dir
-print 'recharge_path: ', recharge_path
-print 'well_dir: ', well_dir
-print 'well_path: ', well_path
-print 'manifest_file: ', manifest_file
-print 'manifest_file_target: ', manifest_file_target
-print 'generated_cases_dir: ', generated_cases_dir
-print 'generated_cases_path: ', generated_cases_path
-print ' '
-
+# generated_cases_prefix = '/bsgam_mf96_'
+generated_cases_prefix = '/' + args.caseprefix + '_'
 
 ####################################################################
 # Methods.
 ####################################################################
+
+# LOG ARGUMENTS
+def logArguments():
+    print ("mcg.py module arguments:")
+    print ("-------------------------------")
+    # print ("First argument: %s" % str(sys.argv[1]))
+    # print ("Second argument: %s" % str(sys.argv[2]))
+    # print ("Third argument: %s" % str(sys.argv[3]))
+    # for i in xrange(total):
+    #     print ("Argument # %d : %s" % (i, str(sys.argv[i])))
+    # print ("The total numbers of args passed to the script: %d" % total)
+    # print ("Args list: %s" % cmdargs)
+    print (" ")
+    return
+
+# LOG PARSER ARGS
+def logArgsParser():
+    print ("mcg.py script arguments:")
+    print ("-------------------------------")
+    print ("Model source directory: %s" % args.modelsourcedir)
+    print ("Recharge interpretations directory: %s" % args.rechargedir)
+    print ("Well scalars directory: %s" % args.welldir)
+    print ("Manifest file: %s" % args.manifestfile)
+    print ("Generated cases output directory: %s" % args.outputdir)
+    print ("Prefix for generated case folders: %s" % args.caseprefix)
+    print (" ")
+    return
+
+# LOG VARIABLES
+def logVariables():
+    print ("mcg.py script variables:")
+    print ('--------------------------------------')
+    print ('current_dir: %s' % current_dir)
+    print ('model_src_dir: %s' % model_src_dir)
+    print ('model_src_path: %s' % model_src_path)
+    print ('recharge_dir: %s' % recharge_dir)
+    print ('recharge_path: %s' % recharge_path)
+    print ('well_dir: %s' % well_dir)
+    print ('well_path: %s' % well_path)
+    print ('manifest_file: %s' % manifest_file)
+    print ('manifest_file_target: %s' % manifest_file_target)
+    print ('generated_cases_dir: %s' % generated_cases_dir)
+    print ('generated_cases_path: %s' % generated_cases_path)
+    print ('generated_cases_prefix: %s' % generated_cases_prefix)
+    print (' ')
+    return
+
+# TRACK CASE GENERATION
 def appendToManifest(manifest_entry):
     print '--------------------------------------'
     # print 'Opening manifest file...'
@@ -163,8 +156,8 @@ def appendToManifest(manifest_entry):
     # print '- Opening mode (scenario_manifest): ', scenario_manifest.mode
     # print '- Softspace flag (scenario_manifest): ', scenario_manifest.softspace
     # print ' '
-    # print 'Appending manifest file...'
-    # print '- manifest_entry:\n', manifest_entry
+    print 'Appending manifest file with:'
+    print '- manifest_entry:\n', manifest_entry
     scenario_manifest.write(manifest_entry + '\n')
     print 'Manifest file updated with current scenario.'
     # print ' '
@@ -175,7 +168,7 @@ def appendToManifest(manifest_entry):
     # print '... manifest file closed.'
     print ' '
 
-
+# CLEAR HISTORY
 def deleteManifest():
     print '--------------------------------------'
     if (os.path.isfile(manifest_file_target)):
@@ -190,6 +183,7 @@ def deleteManifest():
 ####################################################################
 # Generation Logic.
 ####################################################################
+
 def generateScenarios():
     print ' '
     print '--------------------------------------'
@@ -215,7 +209,7 @@ def generateScenarios():
             #print os.path.splitext(wel_)[0]
 
             # Build directory name for case.
-            current_scenario_dir = generated_cases_dir + '/bsgam_mf96_' \
+            current_scenario_dir = generated_cases_dir + generated_cases_prefix \
                 + os.path.splitext(recharge_interpretation)[0] \
                 + '_' + os.path.splitext(well_scenario)[0]
             #print '- current_scenario_dir: ', current_scenario_dir
@@ -268,6 +262,11 @@ def generateScenarios():
     print ' '
 
 ####################################################################
-# Execute Script.
+# Start Module.
 ####################################################################
+
+# logArguments()
+logArgsParser()
+logVariables()
+
 generateScenarios()
