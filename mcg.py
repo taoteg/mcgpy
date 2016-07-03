@@ -53,6 +53,7 @@ parser.add_argument('-wd', '--welldir', help='Input directory path for the well 
 parser.add_argument('-mf', '--manifestfile', help='Filename for the manifest to track generated cases. Defaults to scenario_manifest.dat if no argument is provided.', required=False)
 parser.add_argument('-od', '--outputdir', help='Output directory for the generated cases. Defaults to generated_cases if no argument is provided.', required=False)
 parser.add_argument('-cp', '--caseprefix', help='Naming prefix for the generated case directories. Defaults to case if no argument is provided.', required=False)
+parser.add_argument('-dr', '--dryrun', help='Dry run the script without generating cases to test configs. Defaults to false if no argument is provided.', required=False)
 
 
 # Set some defaults for simplicity.
@@ -62,6 +63,7 @@ parser.set_defaults(welldir="well_scalars")# ./
 parser.set_defaults(manifestfile="scenario_manifest.dat")
 parser.set_defaults(outputdir="generated_cases")# ./
 parser.set_defaults(caseprefix="case")
+parser.set_defaults(dryrun='false')
 
 # Parse the cli args (which will supercede the defaults).
 args = parser.parse_args()
@@ -95,6 +97,8 @@ generated_cases_path = os.path.abspath(generated_cases_dir)
 
 # generated_cases_prefix = '/bsgam_mf96_'
 generated_cases_prefix = '/' + args.caseprefix + '_'
+
+dry_run = args.dryrun
 
 ####################################################################
 # Methods.
@@ -143,8 +147,8 @@ def logVariables():
     print ('generated_cases_dir: %s' % generated_cases_dir)
     print ('generated_cases_path: %s' % generated_cases_path)
     print ('generated_cases_prefix: %s' % generated_cases_prefix)
+    print ('dry_run: %s' % dry_run)
     print (' ')
-    return
 
 # TRACK CASE GENERATION
 def appendToManifest(manifest_entry):
@@ -269,4 +273,8 @@ def generateScenarios():
 logArgsParser()
 logVariables()
 
-generateScenarios()
+if dry_run == 'true':
+    # sys.exit(0)
+    quit()
+else:
+    generateScenarios()
