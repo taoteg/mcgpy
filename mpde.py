@@ -27,8 +27,8 @@ wells_src_files = os.listdir(wells_src_path)
 wells_dest_dir = 'parameterized_well_scalars'
 wells_dest_path = os.path.abspath(wells_dest_dir)
 
-groupRange = 80     # 80 groups.
-wellRange = 118     # 118 wells per group.
+groupRange = 80     # 0-79 (80 groups).
+wellRange = 118     # 0-117 (118 wells per group).
 groupCount = 0
 wellCount = 0
 totalCount = 0
