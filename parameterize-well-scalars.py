@@ -26,7 +26,7 @@ for well in wells_src_path:
 
         if (wellCount < 119):
             print ('The current well file is %s' % well)
-            # shutil.copy(well, current_group_dir)
+            shutil.copy(well, current_group_dir)
             print ('The wellCount is %s' % wellCount)
             wellCount = wellCount + 1
         else:
