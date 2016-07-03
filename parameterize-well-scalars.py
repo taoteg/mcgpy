@@ -101,20 +101,20 @@ while (groupCount < groupRange):
         # Get a reference to the wells file index.
         currentWellIndex = totalCount
         print 'currentWellIndex: ', currentWellIndex
-        # current_wells_file = wells_src_files[currentWellIndex]          # in prod.
-        current_wells_file = wells_src_files[0]                           # in dev.
+        current_wells_file = wells_src_files[currentWellIndex]          # in prod.
+        # current_wells_file = wells_src_files[0]                           # in dev.
         current_wells_file_path = wells_src_path + '/' + current_wells_file
         print 'current_wells_file: ', current_wells_file
         print 'current_wells_file_path: ', current_wells_file_path
         print 'current_group_dir_path: ', current_group_dir_path
         print ' '
 
-        # Copy the well file to the current group dir.
+        # Check if well file exists...
         if not (os.path.exists(current_wells_file_path)):
             print 'DOES NOT EXIST - current_wells_file_path: ', current_wells_file_path
             print ' '
-            # shutil.copy(current_wells_file_path, current_group_dir_path)
 
+        # Copy the well file to the current group dir.
         if (os.path.exists(current_wells_file_path)):
             print 'EXISTS - current_wells_file_path: ', current_wells_file_path
             print ' '
