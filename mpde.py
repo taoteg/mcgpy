@@ -1,5 +1,16 @@
 #!/usr/bin/env python
 
+"""
+MODFLOW 96 Parameterized Data Extraction (Python)
+MPDE.PY
+v.1.1.0
+By John Gentle
+Updated 2016.07.02
+
+Python script to prepare case scenario input files for use in MODFLOW 96.
+See README for usage instructions.
+"""
+
 ####################################################################
 # Imports.
 ####################################################################
@@ -62,8 +73,6 @@ def logVariables():
     print ('The totalCount is: %s' % totalCount)
     print ' '
 
-
-# def incrementCounters():
 
 ####################################################################
 # Start Module.

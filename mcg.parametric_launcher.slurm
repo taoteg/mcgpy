@@ -12,7 +12,7 @@
 #-------------------------------------------------------
 #
 #------------------Scheduler Options--------------------
-#SBATCH -J msgpy-scalar-nu10        # Job name
+#SBATCH -J MCG_CaseGen_All          # Job name
 #SBATCH -N 10                       # Total number of nodes (24 cores/node)
 #SBATCH -n 24                       # Total number of tasks (Is this cores?)
 #SBATCH -p normal                   # Queue name
@@ -40,7 +40,7 @@ module load python
 export TACC_LAUNCHER_PPN=24
 export EXECUTABLE=$TACC_LAUNCHER_DIR/init_launcher
 export WORKDIR=.
-export CONTROL_FILE=paramlist.240
+export CONTROL_FILE=mpfg.mcg.240.paramlist
 
 # Variable descriptions:
 #

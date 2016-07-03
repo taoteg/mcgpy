@@ -1,0 +1,6 @@
+Developer notes on the modflow scenario generation script.
+2016.06.30
+John Gentle
+
+
+

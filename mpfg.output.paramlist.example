@@ -1,0 +1,13 @@
+# Need 240 Entries: 3 -rd paths, 80 -wd paths per -rd path, (119 well scalars per -wd group).
+
+# RECHARGE rchTRBAR
+python mcr.py -rd './recharge_interpretations/rchTRBAR/' -wd '/parameterized_well_scalars/wells_group_0' -mf 'manifest_wells_group_0.dat' -cp 'bsgam_mf96'
+
+# RECHARGE rchTRMAC
+python mcr.py -rd './recharge_interpretations/rchTRMAC/' -wd '/parameterized_well_scalars/wells_group_0' -mf 'manifest_wells_group_0.dat' -cp 'bsgam_mf96'
+
+# RECHARGE rchTRNAT
+python mcr.py -rd './recharge_interpretations/rchTRNAT/' -wd '/parameterized_well_scalars/wells_group_0' -mf 'manifest_wells_group_0.dat' -cp 'bsgam_mf96'
+
+# RECHARGE rchTROLD
+python mcr.py -rd './recharge_interpretations/rchTROLD/' -wd '/parameterized_well_scalars/wells_group_0' -mf 'manifest_wells_group_0.dat' -cp 'bsgam_mf96'
