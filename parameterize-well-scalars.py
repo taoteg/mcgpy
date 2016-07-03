@@ -25,7 +25,7 @@ for well_src in well_src_files:
     groupCount = 0
     wellCount = 0
 
-    while (groupCount < 3): #81
+    while (groupCount < 81):
 
         # Build directory name for case.
         current_group_dir = 'well_scalars_' + str(groupCount)
@@ -35,7 +35,7 @@ for well_src in well_src_files:
         if not os.path.exists(current_group_dir_path):
             os.makedirs(current_group_dir_path)
 
-        if (wellCount < 3): #119
+        if (wellCount < 119):
             print '----------------------------------------------------------------------------'
             current_well_file = wells_src_path + '/' + well_src
             print ('The current_well_file is: %s' % current_well_file)
