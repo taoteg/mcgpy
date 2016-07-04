@@ -23,8 +23,10 @@ import os
 iterator = 0
 maxIterations = 80
 casePrefix = 'bsgam_mf96'
+manifestPrefix = 'mpfg.mcg'
+manifestCase = 'rch3x'
 taskCount = '240'
-manifest_file = 'mpfg.mcg.' + taskCount + '.paramlist'
+manifest_file = manifestPrefix + '.' + manifestCase + '.' + taskCount + '.paramlist'
 manifest_file_target = os.getcwd() + '/' + manifest_file
 rechargePath = './recharge_interpretations/'
 wellsPath = './parameterized_well_scalars/'

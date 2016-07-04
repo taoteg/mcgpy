@@ -40,7 +40,7 @@ module load python
 export TACC_LAUNCHER_PPN=24
 export EXECUTABLE=$TACC_LAUNCHER_DIR/init_launcher
 export WORKDIR=.
-export CONTROL_FILE=mpfg.mcg.240.paramlist
+export CONTROL_FILE=mpfg.mcg.rch3x.240.paramlist
 
 # Variable descriptions:
 #
