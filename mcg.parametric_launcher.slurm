@@ -17,7 +17,7 @@
 #SBATCH -n 24                       # Total number of tasks (Is this cores?)
 #SBATCH -p normal                   # Queue name
 #SBATCH -o Parametric.o_%j          # Name of stdout output file (%j expands to jobid)
-#SBATCH -t 72:00:00                 # Run time (hh:mm:ss)
+#SBATCH -t 48:00:00                 # Run time (hh:mm:ss)
 #
 # <------------ Account String ------------>
 # <--- (Use this ONLY if you have MULTIPLE accounts) --->
@@ -124,5 +124,5 @@ echo " WORKING DIR:   $WORKDIR/"
 $TACC_LAUNCHER_DIR/paramrun SLURM $EXECUTABLE $WORKDIR $CONTROL_FILE $PHI_WORKDIR $PHI_CONTROL_FILE
 
 echo " "
-echo " Parameteric Job Complete"
+echo " Parametric Job Complete"
 echo " "
