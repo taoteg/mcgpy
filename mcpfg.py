@@ -34,10 +34,9 @@ scenario_dirs_path = '/data/03325/jgentle/encompass/modflow/modflow96/data_src/g
 scenario_dirs_name = os.getcwd()
 scenario_dirs_target = os.path.abspath(scenario_dirs_name)
 
-taskCount = 240
-
 paramlist_prefix = 'mcpfg.mf96'
 paramlist_label = 'run_cases'
+taskCount = '240'
 paramlist_file = paramlist_prefix + '.' + paramlist_label + '.' + taskCount + '.paramlist'
 paramlist_file_target = os.getcwd() + '/' + paramlist_file
 
