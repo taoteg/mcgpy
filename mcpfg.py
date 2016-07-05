@@ -35,7 +35,7 @@ scenario_dirs_name = os.getcwd()
 scenario_dirs_target = os.path.abspath(scenario_dirs_name)
 
 paramlist_prefix = 'mf.96'
-paramlist_label = 'test_sort'
+paramlist_label = 'test_sort_2'
 paramlist_file = paramlist_prefix + '.' + paramlist_label + '.paramlist'
 paramlist_file_target = os.getcwd() + '/' + paramlist_file
 
@@ -73,9 +73,9 @@ scriptStatus('>>> Generating Case Params...')
     # print 'case: ', case
 
 for case in listdir_nohidden(scenario_dirs_target):
-    print case
-    # ut.sort(key=lambda x: x.count, reverse=True)
-
+    print 'case: ', case
+    case.sort()
+    # print 'case: ', case
     current_param = "cd " + os.getcwd() + "/" + case + " && mf96"
     # print 'current_param: ', current_param
 
