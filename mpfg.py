@@ -81,7 +81,7 @@ for recharge in listdir_nohidden(rechargePath):
     else:
         scriptStatus('...Params Generated <<<')
         iterator = 0
-        
+
 quit()
 
 ####################################################################
