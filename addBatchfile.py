@@ -31,8 +31,11 @@ model_src_path = os.path.abspath(model_src_dir)
 #     print case_dir
 
 for subdir, dirs, files in os.walk(root_dir):
-    print 'dirs: ', dirs
-    # print 'subdir: ', subdir
+    for d in dirs:
+        print 'dir: ', d
 
-    # for file in files:
-    #     print 'file: ', os.path.join(subdir, file)
+    for subd in subdir:
+        print 'subdir: ', subd
+
+    for f in files:
+        print 'file: ', os.path.join(subdir, f)
