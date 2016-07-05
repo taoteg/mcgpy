@@ -18,13 +18,18 @@ See README for usage instructions.
 ####################################################################
 import os
 
-# current_dir = os.path.abspath('')
-current_dir = os.getcwd()
-model_src_dir = current_dir
+root_dir = '/data/03325/jgentle/encompass/modflow/modflow96/data_src/generated_cases/bsgam/gen_2'
+# current_dir = os.getcwd()
+model_src_dir = root_dir
+# model_src_dir = current_dir
 # print model_src_dir
 model_src_path = os.path.abspath(model_src_dir)
 print model_src_path
 
-for case in model_src_path:
-    case_dir = os.path.abspath(case)
-    print case_dir
+# for case in model_src_path:
+#     case_dir = os.path.abspath(case)
+#     print case_dir
+
+for subdir, dirs, files in os.walk(rootdir):
+    for file in files:
+        print os.path.join(subdir, file)
