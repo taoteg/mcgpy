@@ -69,12 +69,12 @@ def appendToParamlist(new_entry):
 scriptStatus('>>> Generating Case Params...')
 
 for case_dir in listdir_nohidden(scenario_dirs_target):
-    print case_dir
+    # print case_dir
 
     current_param = "cd " + os.getcwd() + "/" + case_dir + " && mf96"
-    print 'current_param: ', current_param
+    # print 'current_param: ', current_param
 
-    # appendToParamlist(current_param)
+    appendToParamlist(current_param)
 
 scriptStatus('...Case Params Generated <<<')
 quit()
