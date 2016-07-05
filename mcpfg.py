@@ -69,7 +69,7 @@ scriptStatus('>>> Generating Case Params...')
 
 case_dirs = listdir_nohidden(scenario_dirs_target)
 print 'case_dirs: ', case_dirs
-cases = case_dirs.sort
+cases = case_dirs.sort()
 # for case in listdir_nohidden(cases):
     # print 'case: ', case
 
