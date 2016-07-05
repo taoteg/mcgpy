@@ -16,17 +16,15 @@ See README for usage instructions.
 ####################################################################
 # Imports.
 ####################################################################
-
-# import sys, inspect
 import os
 
 # current_dir = os.path.abspath('')
 current_dir = os.getcwd()
-modelsourcedir = current_dir
-model_src_dir = modelsourcedir
+model_src_dir = current_dir
 # print model_src_dir
 model_src_path = os.path.abspath(model_src_dir)
 print model_src_path
 
 for case in model_src_path:
-    print case
+    case_dir = os.path.abspath(case)
+    print case_dir
