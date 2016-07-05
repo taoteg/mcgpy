@@ -26,8 +26,8 @@ import shutil
 batch_file = 'modflow.bf'
 print batch_file
 
-batch_file_path = os.path.abspath(batch_file)
-print batch_file_path
+batch_file_target = os.path.abspath(batch_file)
+print batch_file_target
 
 # root_dir = '/data/03325/jgentle/encompass/modflow/modflow96/data_src/generated_cases/bsgam/gen_2'
 root_dir = os.getcwd()
@@ -39,9 +39,14 @@ print root_dir
 #         print 'dir: ', d
 #         # copy batchfile into directory.
 #         shutil.copy(batch_file, current_scenario_destdir)
+#     for subd in subdir:
+#         print 'subdir: ', subd
+#     for f in files:
+#         print 'file: ', os.path.join(subdir, f)
 
-    # for subd in subdir:
-    #     print 'subdir: ', subd
 
-    # for f in files:
-    #     print 'file: ', os.path.join(subdir, f)
+for subdir, dirs, files in os.walk(root_dir):
+    for d in dirs:
+        print 'batchfile: ', batch_file_target
+        print 'dir: ', d
+        # shutil.copy(batch_file_target, current_scenario_destdir)
