@@ -40,7 +40,7 @@ module load python
 export TACC_LAUNCHER_PPN=24
 export EXECUTABLE=$TACC_LAUNCHER_DIR/init_launcher
 export WORKDIR=.
-export CONTROL_FILE=mf.96.all_cases.paramlist
+export CONTROL_FILE=mf.96.cases.sorted.paramlist
 
 # Variable descriptions:
 #
