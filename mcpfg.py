@@ -34,6 +34,11 @@ scenario_dirs_path = '/data/03325/jgentle/encompass/modflow/modflow96/data_src/g
 scenario_dirs_name = os.getcwd()
 scenario_dirs_target = os.path.abspath(scenario_dirs_name)
 
+paramlist_prefix = 'mcpfg.mf96'
+paramlist_label = 'run_cases'
+paramlist_file = paramlist_prefix + '.' + paramlist_label + '.' + taskCount + '.paramlist'
+paramlist_file_target = os.getcwd() + '/' + paramlist_file
+
 
 ####################################################################
 # Methods.
@@ -51,10 +56,10 @@ def scriptStatus(scriptState):
     print ' '
 
 
-# def appendToManifest(manifest_entry):
-#     scenario_manifest = open(manifest_file, 'a+')
-#     scenario_manifest.write(manifest_entry + '\n')
-#     scenario_manifest.close()
+def appendToParamlist(new_entry):
+    scenario_paramlist = open(paramlist_file, 'a+')
+    scenario_paramlist.write(new_entry + '\n')
+    scenario_paramlist.close()
 
 
 ####################################################################
@@ -65,8 +70,15 @@ scriptStatus('>>> Generating Case Params...')
 for case_dir in listdir_nohidden(scenario_dirs_target):
     print case_dir
 
+    current_param = "cd " + os.getcwd() + "/" + case_dir + "&& mf96"
+    print 'current_param: ', current_param
 
+    # appendToParamlist(current_param)
+
+scriptStatus('...Case Params Generated <<<')
 quit()
+
+
 ####################################################################
 # End Module.
 ####################################################################
