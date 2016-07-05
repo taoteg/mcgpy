@@ -17,25 +17,31 @@ See README for usage instructions.
 # Imports.
 ####################################################################
 import os
+import shutil
+
+
+####################################################################
+# Variables.
+####################################################################
+batch_file = 'modflow.bf'
+print batch_file
+
+batch_file_path = os.path.abspath(batch_file)
+print batch_file_path
 
 # root_dir = '/data/03325/jgentle/encompass/modflow/modflow96/data_src/generated_cases/bsgam/gen_2'
 root_dir = os.getcwd()
-# print root_dir
-model_src_dir = root_dir
-# print model_src_dir
-model_src_path = os.path.abspath(model_src_dir)
-# print model_src_path
+print root_dir
 
-# for case in model_src_path:
-#     case_dir = os.path.abspath(case)
-#     print case_dir
 
-for subdir, dirs, files in os.walk(root_dir):
-    for d in dirs:
-        print 'dir: ', d
+# for subdir, dirs, files in os.walk(root_dir):
+#     for d in dirs:
+#         print 'dir: ', d
+#         # copy batchfile into directory.
+#         shutil.copy(batch_file, current_scenario_destdir)
 
-    for subd in subdir:
-        print 'subdir: ', subd
+    # for subd in subdir:
+    #     print 'subdir: ', subd
 
-    for f in files:
-        print 'file: ', os.path.join(subdir, f)
+    # for f in files:
+    #     print 'file: ', os.path.join(subdir, f)
