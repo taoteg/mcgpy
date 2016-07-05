@@ -52,7 +52,7 @@ for subdir, dirs, files in os.walk(root_dir):
     for d in dirs:
         print 'batch_file_target: ', batch_file_target
         print 'dir: ', d
-        shutil.copy(batch_file_target, current_scenario_destdir)
+        shutil.copy(batch_file_target, d)
 
 
 ####################################################################
