@@ -11,14 +11,15 @@ Python script to generate the paramlist file for case scenario inputs used in MO
 See README for usage instructions.
 """
 
-# Get ref to list of case dirs to iterate over.
-#   List could be generated from a file,
-#   or run on node with ref to actual case dirs,
-#   or run form within target dirs parent.
+# Get list of case dirs to iterate over.
+#   List could be generated from:
+#       - a file,
+#       - run on the node with a ref to hte actual case dirs,
+#       - run from within the target dirs parent.
 # For each dir in list, generate command:
-#       cd /target/dir/path && mf96
+#   cd /target/dir/path && mf96
 # Append command to paramlist
-# Will result in as any lines as there are case scenarios.
+# Will result in as many lines as there are case scenarios.
 
 ####################################################################
 # Imports.
