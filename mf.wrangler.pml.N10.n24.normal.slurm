@@ -35,7 +35,7 @@
 #
 #------------------General Options---------------------
 module load launcher
-module load python
+# module load python
 
 export TACC_LAUNCHER_PPN=24
 export EXECUTABLE=$TACC_LAUNCHER_DIR/init_launcher
