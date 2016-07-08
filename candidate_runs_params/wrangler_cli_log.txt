@@ -1,0 +1,753 @@
+login1.wrangler(93)$ ll
+total 3391
+-rw------- 1 jgentle G-815499 1619440 Jul  8 16:58 candidate_paramlist_all.dat
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aaa
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aab
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aac
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aad
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aae
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aaf
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aag
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aah
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aai
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aaj
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aak
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aal
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aam
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aan
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aao
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aap
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aaq
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aar
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aas
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aat
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aau
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aav
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aaw
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aax
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aay
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aaz
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.aba
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abb
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abc
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abd
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abe
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abf
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abg
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abh
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abi
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abj
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abk
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abl
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abm
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abn
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abo
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abp
+-rw------- 1 jgentle G-815499   37200 Jul  8 16:58 candidate.paramlist.chunk.abq
+-rw------- 1 jgentle G-815499   19840 Jul  8 16:58 candidate.paramlist.chunk.abr
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aaa.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aab.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aac.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aad.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aae.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aaf.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aag.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aah.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aai.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aaj.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aak.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aal.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aam.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aan.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aao.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aap.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aaq.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aar.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aas.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aat.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aau.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aav.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aaw.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aax.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aay.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aaz.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_aba.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abb.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abc.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abd.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abe.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abf.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abg.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abh.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abi.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abj.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abk.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abl.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abm.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abn.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abo.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abp.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abq.wrangler.pml.N10.n24.hadoop.slurm
+-rw------- 1 jgentle G-815499    4605 Jul  8 17:21 mf.candidatesGT3.chunk_abr.wrangler.pml.N10.n24.hadoop.slurm
+login1.wrangler(94)$ clear
+login1.wrangler(95)$ sbatch mf.candidatesGT3.chunk_aaa.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16253
+login1.wrangler(96)$ sbatch mf.candidatesGT3.chunk_aab.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16254
+login1.wrangler(97)$ sbatch mf.candidatesGT3.chunk_aac.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16255
+login1.wrangler(98)$ sbatch mf.candidatesGT3.chunk_aad.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16256
+login1.wrangler(99)$ sbatch mf.candidatesGT3.chunk_aae.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16257
+login1.wrangler(100)$ sbatch mf.candidatesGT3.chunk_aaf.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16258
+login1.wrangler(101)$ sbatch mf.candidatesGT3.chunk_aag.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16259
+login1.wrangler(102)$ sbatch mf.candidatesGT3.chunk_aah.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16260
+login1.wrangler(103)$ sbatch mf.candidatesGT3.chunk_aai.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16261
+login1.wrangler(104)$ sbatch mf.candidatesGT3.chunk_aaj.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16262
+login1.wrangler(105)$ sbatch mf.candidatesGT3.chunk_aak.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16263
+login1.wrangler(106)$ sbatch mf.candidatesGT3.chunk_aal.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16264
+login1.wrangler(107)$ sbatch mf.candidatesGT3.chunk_aam.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16265
+login1.wrangler(108)$ sbatch mf.candidatesGT3.chunk_aan.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16266
+login1.wrangler(109)$ sbatch mf.candidatesGT3.chunk_aao.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16267
+login1.wrangler(110)$ sbatch mf.candidatesGT3.chunk_aap.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16268
+login1.wrangler(111)$ sbatch mf.candidatesGT3.chunk_aaq.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16269
+login1.wrangler(112)$ sbatch mf.candidatesGT3.chunk_aar.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16270
+login1.wrangler(113)$ sbatch mf.candidatesGT3.chunk_aas.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16271
+login1.wrangler(114)$ sbatch mf.candidatesGT3.chunk_aat.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16272
+login1.wrangler(115)$ sbatch mf.candidatesGT3.chunk_aau.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16273
+login1.wrangler(116)$ sbatch mf.candidatesGT3.chunk_aav.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16274
+login1.wrangler(117)$ sbatch mf.candidatesGT3.chunk_aaw.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16275
+login1.wrangler(118)$ sbatch mf.candidatesGT3.chunk_aax.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16276
+login1.wrangler(119)$ sbatch mf.candidatesGT3.chunk_aay.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16277
+login1.wrangler(120)$ sbatch mf.candidatesGT3.chunk_aaz.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16278
+login1.wrangler(121)$ sbatch mf.candidatesGT3.chunk_aba.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16279
+login1.wrangler(122)$ sbatch mf.candidatesGT3.chunk_abb.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16280
+login1.wrangler(123)$ sbatch mf.candidatesGT3.chunk_abc.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16281
+login1.wrangler(124)$ sbatch mf.candidatesGT3.chunk_abd.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16282
+login1.wrangler(125)$ sbatch mf.candidatesGT3.chunk_abe.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16283
+login1.wrangler(126)$ sbatch mf.candidatesGT3.chunk_abf.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16284
+login1.wrangler(127)$ sbatch mf.candidatesGT3.chunk_abg.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16285
+login1.wrangler(128)$ sbatch mf.candidatesGT3.chunk_abh.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16286
+login1.wrangler(129)$ sbatch mf.candidatesGT3.chunk_abi.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16287
+login1.wrangler(130)$ sbatch mf.candidatesGT3.chunk_abj.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16288
+login1.wrangler(131)$ sbatch mf.candidatesGT3.chunk_abk.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16289
+login1.wrangler(132)$ sbatch mf.candidatesGT3.chunk_abl.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16290
+login1.wrangler(133)$ sbatch mf.candidatesGT3.chunk_abm.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16291
+login1.wrangler(134)$ sbatch mf.candidatesGT3.chunk_abn.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16292
+login1.wrangler(135)$ sbatch mf.candidatesGT3.chunk_abo.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16293
+login1.wrangler(136)$ sbatch mf.candidatesGT3.chunk_abp.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16294
+login1.wrangler(137)$ sbatch mf.candidatesGT3.chunk_abq.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16295
+login1.wrangler(138)$ sbatch mf.candidatesGT3.chunk_abr.wrangler.pml.N10.n24.hadoop.slurm
+-----------------------------------------------------------------
+          Welcome to Wrangler at TACC
+-----------------------------------------------------------------
+
+--> Verifying valid submit host (login1)...OK
+--> Verifying valid jobname...OK
+--> Enforcing max jobs per user...OK
+--> Verifying availability of your home dir (/home/03325/jgentle)...OK
+--> Verifying availability of your work dir (/work/03325/jgentle/wrangler)...OK
+--> Verifying valid ssh keys...OK
+--> Verifying access to desired queue (hadoop)...OK
+--> Verifying job request is within current queue limits...OK
+--> Checking available allocation (Groundwater-Decision)...OK
+Submitted batch job 16296
+
