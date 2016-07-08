@@ -40,7 +40,7 @@ module load launcher
 export TACC_LAUNCHER_PPN=24
 export EXECUTABLE=$TACC_LAUNCHER_DIR/init_launcher
 export WORKDIR=.
-export CONTROL_FILE=mf.candidatesGT3.chunk_abc.wrangler.pml.N10.n24.hadoop.slurm
+export CONTROL_FILE=candidate.paramlist.chunk.abc
 
 # Variable descriptions:
 #
