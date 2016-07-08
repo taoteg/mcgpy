@@ -68,7 +68,7 @@ def appendToParamlist(new_entry):
 ####################################################################
 scriptStatus('>>> Generating Case Params...')
 
-case_dirs = sorted(listdir_nohidden(scenario_dirs_target))
+# case_dirs = sorted(listdir_nohidden(scenario_dirs_target))
 # print 'case_dirs: ', case_dirs
 
 for case in case_dirs:
