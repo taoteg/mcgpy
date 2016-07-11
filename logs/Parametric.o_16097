@@ -246,3 +246,8 @@ TACC Launcher -> Initating task 214 on c252-116.wrangler.tacc.utexas.edu (cd /da
 TACC Launcher -> Initating task 215 on c252-116.wrangler.tacc.utexas.edu (cd /data/03325/jgentle/encompass/modflow/modflow96/data_src/generated_cases/bsgam/gen_2/bsgam_mf96_rchTRBAR_wells_0596ca3813cd28ccbe01ae73d24dcd55 && mf96)
 TACC Launcher -> Initating task 203 on c252-116.wrangler.tacc.utexas.edu (cd /data/03325/jgentle/encompass/modflow/modflow96/data_src/generated_cases/bsgam/gen_2/bsgam_mf96_rchTRBAR_wells_054f77ff91a172401e0f6f43bc69795c && mf96)
 TACC Launcher -> Initating task 207 on c252-116.wrangler.tacc.utexas.edu (cd /data/03325/jgentle/encompass/modflow/modflow96/data_src/generated_cases/bsgam/gen_2/bsgam_mf96_rchTRBAR_wells_055e5e3f6871c49be6644fe8915e0ff8 && mf96)
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+ 
+ Parametric Job Complete
+ 
